@@ -1,0 +1,63 @@
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+/* src/themes.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header, .main, .footer {
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.header.light {
+  background-color: #f0f0f0;
+}
+
+.header.dark {
+  background-color: #333;
+}
+
+.main {
+  flex: 1;
+  text-align: center;
+}
+
+.main.light {
+  background-color: #fff;
+}
+
+.main.dark {
+  background-color: #444;
+}
+
+.footer.light {
+  background-color: #f0f0f0;
+}
+
+.footer.dark {
+  background-color: #333;
+}
